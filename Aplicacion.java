@@ -26,9 +26,14 @@ public class Aplicacion {
                     String autor = scanner.nextLine();
                     System.out.print("Número de páginas: ");
                     int numeroDePaginas = scanner.nextInt();
+                    System.out.println("¿Está prestado el libro? (S/N)");
+                    String prestado = scanner.nextLine();
 
-                    Libro libro = new Libro(titulo, autor, numeroDePaginas);
-                    biblioteca.agregarLibro(libro);
+                    if (prestado.equalsIgnoreCase("S")) {
+                        biblioteca.agregarLibro(new Libro(titulo, autor, numeroDePaginas, true));
+                    } else {
+                        biblioteca.agregarLibro(new Libro(titulo, autor, numeroDePaginas, false));
+                    }
                     break;
 
                 case 2:
@@ -36,6 +41,16 @@ public class Aplicacion {
                     break;
 
                 case 3:
+                    System.out.print("Ingrese el título del libro que desea pedir: ");
+                    String nombreLibro = scanner.nextLine();
+                    if (biblioteca.prestarLibro(nombreLibro)) {
+                        System.out.println("El libro ha sido prestado con éxito.");
+                    } else {
+                        System.out.println("El libro no existe en el catálogo.");
+                    }
+                    break;
+
+                case 4:
                     System.out.println("Saliendo del sistema...");
                     break;
 
