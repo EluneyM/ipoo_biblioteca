@@ -51,7 +51,13 @@ public class Aplicacion {
                     break;
 
                 case 4:
-                    System.out.println("Saliendo del sistema...");
+                    System.out.println("Ingrese el título del libro que desea devolver: ");
+                    String nombreLibroDevolver = scanner.nextLine();
+                    if (biblioteca.devolverLibro(nombreLibroDevolver)) {
+                        System.out.println("El libro ha sido devuelto con éxito.");
+                    } else {
+                        System.out.println("El libro no existe en el catálogo.");
+                    }
                     break;
 
                 default:

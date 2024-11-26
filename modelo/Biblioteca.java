@@ -38,4 +38,19 @@ public class Biblioteca {
         }
         return false;
     }
+
+    public boolean devolverLibro(String titulo) {
+        for (Libro libro : catalogo) {
+            if (libro.getTitulo().equalsIgnoreCase(titulo)) {
+                if (libro.isPrestado()) {
+                    libro.setPrestado(false);
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+
 }
