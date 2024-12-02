@@ -1,29 +1,30 @@
-Diseñando la clase Libro
-Llegó el momento de crear la clase Libro y así completar tu sistema de biblioteca. Recuerda que, si bien las actividades te ofrecen guías y pasos a seguir, las actividades integradoras son la oportunidad para desplegar tu creatividad e implementar de manera completa lo aprendido. ¡Desafíate a ti mismo y aprovecha al máximo tu potencial para mejorar tu proyecto!
+✏️  Actividad: Desafío Integrador Gestión de Productos
+
+En este paso, te enfrentas al desafío de desarrollar un sistema completo de gestión de productos para una tienda en línea. A través de las siguientes actividades, pondrás en práctica tus conocimientos:
 
 
-✏️  Actividad: Desarrollo funcionalidades - Primera Parte 
-Debes ampliar el sistema para poder almacenar libros dentro de la biblioteca. Para esto deberás:
+ Estructura del sistema de Gestión de Productos
 
-Agregar los atributos “titulo”, “autor” y “numeroDePaginas” a la clase “Libro”. Además, implementa un método “mostrarInformación()” que muestre la información del libro en consola. En este caso, solo hay 1  ejemplar por título, por lo que no debe existir un atributo que controle la cantidad de ejemplares. 
+Creación de la clase "Producto": Representará los productos disponibles en tu tienda en línea. Cada producto tendrá atributos como nombre, precio, cantidad en stock y una descripción.
 
-Crea la clase “Biblioteca” que contenga un arreglo de objetos “Libro” para mantener un catálogo de libros disponibles en la biblioteca. La biblioteca también debe tener un método para agregar libros al catálogo.
+Definición de subclases de "Producto": Representarán diferentes categorías de productos, como "ProductoElectronico" y "ProductoRopa", cada una con atributos específicos relacionados con su categoría.
 
-Crear una instancia de la clase Biblioteca y agregar varios libros al catálogo 
+Implementación de la interfaz "Comprable": Definirá un método "calcularPrecio()" para calcular el precio total de un producto, considerando descuentos o impuestos aplicables.
 
+Creación de la clase "Cliente": Los clientes podrán agregar productos al carrito de compras y gestionar la lista de productos deseados. Se deberá implementar una excepción personalizada para situaciones donde se intente comprar productos agotados.
 
-Implementa un menú por consola que permite al usuario agregar libros a la biblioteca y mostrar la información de los libros en el catálogo.
+Interacción con el Sistema de Gestión de Productos
 
-Prestar y Devolver Libros
-¡Continúa desarrollando tu proyecto!
+Desarrollo del menú interactivo:
 
-✏️  Actividad: Desarrollo funcionalidades  - SegundaParte 
-Debes seguir ampliando el sistema para permitir el préstamo y la devolución de libros. Para esto deberás:
+Opción 1: Agregar producto al carrito: Permite al usuario seleccionar un producto y agregarlo al carrito de compras, gestionando adecuadamente la cantidad de productos a agregar.
 
-Agrega el atributo “prestado” a la clase “Libro” para rastrear si un libro está prestado o no.
+Opción 2: Ver el carrito: El usuario podrá visualizar los productos agregados al carrito, junto con la cantidad y el precio total de cada producto.
 
-Crea la clase “Persona” que represente a un usuario de la biblioteca. Debe contener atributos como nombre, apellido y una lista de libros que ha pedido prestado.
+Opción 3: Realizar la compra: Calcula el costo total de los productos en el carrito, aplica descuentos o impuestos según corresponda y muestra el precio final de la compra.
 
-Implementa métodos en la clase “Biblioteca” para permitir que una persona tome prestado un libro (marcándolo como prestado) y para devolver un libro (marcándolo como disponible nuevamente).
+Opción 4: Salir del sistema: Permite al usuario salir del sistema.
 
-Mejora el menú de consola para permitir a los usuarios seleccionar opciones para prestar y devolver libros.
+Sugerencia adicional:
+
+Se puede incluir una opción "volver a comprar" en el menú, que mantenga en memoria el stock de productos afectado por la compra anterior.
