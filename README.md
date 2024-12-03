@@ -1,30 +1,17 @@
-✏️  Actividad: Desafío Integrador Gestión de Productos
+✏️ Actividad: Lista de ciudades
+Desarrolla un programa en Java que haga uso de una lista de tipo ArrayList para almacenar un conjunto de nombres de ciudades. El objetivo es permitir al usuario ingresar nombres de ciudades y luego mostrar la lista completa de ciudades ingresadas.
 
-En este paso, te enfrentas al desafío de desarrollar un sistema completo de gestión de productos para una tienda en línea. A través de las siguientes actividades, pondrás en práctica tus conocimientos:
+Pasos a seguir:
+
+Inicializa un ArrayList de tipo String para almacenar los nombres de las ciudades.
+
+Implementa un bucle que solicite al usuario ingresar nombres de ciudades uno por uno. Puedes usar un bucle while o un bucle for que pregunte al usuario si desea agregar una ciudad en cada iteración.
+
+En cada iteración del bucle, solicita al usuario que ingrese el nombre de una ciudad y agrega ese nombre al ArrayList utilizando el método add.
+
+Continúa solicitando al usuario que ingrese nombres de ciudades hasta que decida no agregar más.
+
+Finalmente, muestra por consola la lista completa de ciudades almacenadas en el ArrayList.
 
 
- Estructura del sistema de Gestión de Productos
-
-Creación de la clase "Producto": Representará los productos disponibles en tu tienda en línea. Cada producto tendrá atributos como nombre, precio, cantidad en stock y una descripción.
-
-Definición de subclases de "Producto": Representarán diferentes categorías de productos, como "ProductoElectronico" y "ProductoRopa", cada una con atributos específicos relacionados con su categoría.
-
-Implementación de la interfaz "Comprable": Definirá un método "calcularPrecio()" para calcular el precio total de un producto, considerando descuentos o impuestos aplicables.
-
-Creación de la clase "Cliente": Los clientes podrán agregar productos al carrito de compras y gestionar la lista de productos deseados. Se deberá implementar una excepción personalizada para situaciones donde se intente comprar productos agotados.
-
-Interacción con el Sistema de Gestión de Productos
-
-Desarrollo del menú interactivo:
-
-Opción 1: Agregar producto al carrito: Permite al usuario seleccionar un producto y agregarlo al carrito de compras, gestionando adecuadamente la cantidad de productos a agregar.
-
-Opción 2: Ver el carrito: El usuario podrá visualizar los productos agregados al carrito, junto con la cantidad y el precio total de cada producto.
-
-Opción 3: Realizar la compra: Calcula el costo total de los productos en el carrito, aplica descuentos o impuestos según corresponda y muestra el precio final de la compra.
-
-Opción 4: Salir del sistema: Permite al usuario salir del sistema.
-
-Sugerencia adicional:
-
-Se puede incluir una opción "volver a comprar" en el menú, que mantenga en memoria el stock de productos afectado por la compra anterior.
+Esta actividad te permitirá practicar la manipulación de ArrayLists en Java, así como también te brindará la oportunidad de repasar cómo interactuar con datos ingresados por el usuario.
