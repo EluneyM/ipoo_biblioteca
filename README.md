@@ -1,17 +1,18 @@
-✏️ Actividad: Lista de ciudades
-Desarrolla un programa en Java que haga uso de una lista de tipo ArrayList para almacenar un conjunto de nombres de ciudades. El objetivo es permitir al usuario ingresar nombres de ciudades y luego mostrar la lista completa de ciudades ingresadas.
-
-Pasos a seguir:
-
-Inicializa un ArrayList de tipo String para almacenar los nombres de las ciudades.
-
-Implementa un bucle que solicite al usuario ingresar nombres de ciudades uno por uno. Puedes usar un bucle while o un bucle for que pregunte al usuario si desea agregar una ciudad en cada iteración.
-
-En cada iteración del bucle, solicita al usuario que ingrese el nombre de una ciudad y agrega ese nombre al ArrayList utilizando el método add.
-
-Continúa solicitando al usuario que ingrese nombres de ciudades hasta que decida no agregar más.
-
-Finalmente, muestra por consola la lista completa de ciudades almacenadas en el ArrayList.
+✏️ Actividad: Sopa de números
+Desarrolla un programa que solicite al usuario ingresar una serie de valores numéricos enteros desde el teclado y los guarde en un ArrayList de tipo Integer. La lectura de números finalizará cuando se introduzca el valor -99. Este valor no será almacenado en el ArrayList.
 
 
-Esta actividad te permitirá practicar la manipulación de ArrayLists en Java, así como también te brindará la oportunidad de repasar cómo interactuar con datos ingresados por el usuario.
+Una vez completada la entrada de datos, el programa mostrará por pantalla el número total de valores ingresados, su suma y su media (promedio). Además, se mostrará cuántos de los valores ingresados son mayores que la media.
+
+
+Para abordar esta tarea, asegúrate de desarrollar al menos los siguientes métodos:
+
+
+Método leerValores(): Este método solicita por teclado los números y los almacena en el ArrayList. La lectura finaliza cuando se introduce el valor -99. El método devuelve el ArrayList con los valores introducidos.
+
+Método calcularSuma(): Recibe como parámetro el ArrayList con los valores numéricos y calcula su suma. Utiliza un Iterator para recorrer el ArrayList.
+
+Método calcularPromedio(): Recibe como parámetro el ArrayList con los valores numéricos y calcula su media. Utiliza un Iterator para recorrer el ArrayList.
+
+Método mostrarResultados(): Recibe como parámetro el ArrayList, la suma y la media aritmética. Este método muestra por pantalla todos los valores, su suma y su media, y calcula y muestra cuántos números son superiores a la media.
+
