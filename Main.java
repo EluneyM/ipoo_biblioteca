@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
         List<Integer> lista = new ArrayList<>();
         leerValores(lista);
@@ -47,6 +45,7 @@ public class Main {
             if (dato != -99) {
                 lista.add(dato);
             } else {
+                scanner.close();
                 break;
             }
         } while (true);
